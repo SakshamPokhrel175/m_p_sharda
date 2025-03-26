@@ -8,6 +8,8 @@ import { InstitutionSelectionComponent } from './Pages/auth/institution-users/in
 import { ManageInstitutionComponent } from './Pages/auth/manage-institution/manage-institution.component';
 import { FeatureComponent } from './Pages/feature/feature.component';
 import { PlanComponent } from './Pages/plan/plan.component';
+import { TestimonialComponent } from './Pages/testimonial/testimonial.component';
+import { HelpComponent } from './Pages/help/help.component';
 export const routes: Routes = [
   {
     path: '',
@@ -72,6 +74,20 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./Pages/plan/plan.component').then(
         (m) => m.PlanComponent
+      ),
+  },
+  {
+    path: 'testimonials',
+    loadComponent: () =>
+      import('./Pages/testimonial/testimonial.component').then(
+        (m) => m.TestimonialComponent
+      ),
+  },
+  {
+    path: 'help',
+    loadComponent: () =>
+      import('./Pages/help/help.component').then(
+        (m) => m.HelpComponent
       ),
   },
 
