@@ -7,6 +7,7 @@ import { AdminAuthComponent } from './Pages/auth/admin-users/admin-auth/admin-au
 import { InstitutionSelectionComponent } from './Pages/auth/institution-users/institution-selector/institution-selector.component';
 import { ManageInstitutionComponent } from './Pages/auth/manage-institution/manage-institution.component';
 import { FeatureComponent } from './Pages/feature/feature.component';
+import { PlanComponent } from './Pages/plan/plan.component';
 export const routes: Routes = [
   {
     path: '',
@@ -51,18 +52,26 @@ export const routes: Routes = [
         (m) => m.AdminAuthComponent
       ),
   },
-    {
+  {
     path: 'auth/manage-institute',
     loadComponent: () =>
       import('./Pages/auth/manage-institution/manage-institution.component').then(
         (m) => m.ManageInstitutionComponent
       ),
   },
-{
+  {
     path: 'features',
     loadComponent: () =>
       import('./Pages/feature/feature.component').then(
         (m) => m.FeatureComponent
+      ),
+  },
+
+  {
+    path: 'plans',
+    loadComponent: () =>
+      import('./Pages/plan/plan.component').then(
+        (m) => m.PlanComponent
       ),
   },
 
