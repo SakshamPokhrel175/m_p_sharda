@@ -11,7 +11,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title fw-bold text-warning">{{ plan.title }}</h5>
                         <p class="card-text">{{ plan.description }}</p>
-                        <h4 class="text-warning">${{ plan.price }} <span class="text-muted">/month</span></h4>
+                        <h4 class="text-warning">${{ plan.price }} <span class="text-secondary">/month</span></h4>
                         <ul class="list-unstyled">
                             <li *ngFor="let feature of plan.features">
                                 <i class="bi bi-check-circle-fill text-success"></i> {{ feature }}
