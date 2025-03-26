@@ -9,16 +9,10 @@
     <div class="card p-4 shadow-lg rounded-4">
       <div class="d-flex justify-content-center mb-4">
         <!-- Toggle buttons for Login and Signup -->
-        <button
-          class="btn btn-outline-primary me-2"
-          [class.active]="isLoginSelected"
-          (click)="toggleForm(true)">
+        <button class="btn btn-outline-primary me-2" [class.active]="isLoginSelected" (click)="toggleForm(true)">
           Login
         </button>
-        <button
-          class="btn btn-outline-primary"
-          [class.active]="!isLoginSelected"
-          (click)="toggleForm(false)">
+        <button class="btn btn-outline-primary" [class.active]="!isLoginSelected" (click)="toggleForm(false)">
           Sign Up
         </button>
       </div>
@@ -28,31 +22,21 @@
         <h3 class="text-center mb-4 font-weight-bold">Login</h3>
         <form (ngSubmit)="onLogin()" #loginForm="ngForm">
           <div class="mb-3">
-            <input
-              type="email"
-              class="form-control"
-              placeholder="Email"
-              required
-              [(ngModel)]="loginData.email"
-              name="email"
-            />
+            <input type="email" class="form-control" placeholder="Email" required [(ngModel)]="loginData.email"
+              name="email" />
           </div>
           <div class="mb-3">
-            <input
-              type="password"
-              class="form-control"
-              placeholder="Password"
-              required
-              [(ngModel)]="loginData.password"
-              name="password"
-            />
+            <input type="password" class="form-control" placeholder="Password" required [(ngModel)]="loginData.password"
+              name="password" />
           </div>
           <button class="btn btn-primary w-100" type="submit">Login</button>
         </form>
 
         <div class="mt-3 text-center">
-          <a href="#" class="text-decoration-none d-block">Forgot your password?</a>
-          <a href="#" class="text-decoration-none d-block" (click)="toggleForm(false)">Create an account</a>
+          <a href="#" class="text-decoration-none d-block" (click)="onForgotPassword($event)">Forgot your password?</a>
+          <button class="btn btn-link text-decoration-none d-block mx-auto" (click)="toggleForm(false)">
+            Create an account
+          </button>
         </div>
       </div>
 
@@ -61,40 +45,24 @@
         <h3 class="text-center mb-4 font-weight-bold">Sign Up</h3>
         <form (ngSubmit)="onSignup()" #signupForm="ngForm">
           <div class="mb-3">
-            <input
-              type="email"
-              class="form-control"
-              placeholder="Email"
-              required
-              [(ngModel)]="signupData.email"
-              name="email"
-            />
+            <input type="email" class="form-control" placeholder="Email" required [(ngModel)]="signupData.email"
+              name="email" />
           </div>
           <div class="mb-3">
-            <input
-              type="password"
-              class="form-control"
-              placeholder="Password"
-              required
-              [(ngModel)]="signupData.password"
-              name="password"
-            />
+            <input type="password" class="form-control" placeholder="Password" required
+              [(ngModel)]="signupData.password" name="password" />
           </div>
           <div class="mb-3">
-            <input
-              type="password"
-              class="form-control"
-              placeholder="Confirm Password"
-              required
-              [(ngModel)]="signupData.confirmPassword"
-              name="confirmPassword"
-            />
+            <input type="password" class="form-control" placeholder="Confirm Password" required
+              [(ngModel)]="signupData.confirmPassword" name="confirmPassword" />
           </div>
           <button class="btn btn-primary w-100" type="submit">Sign Up</button>
         </form>
 
         <div class="mt-3 text-center">
-          <a href="#" class="text-decoration-none d-block" (click)="toggleForm(true)">Already have an account? Login</a>
+          <button class="btn btn-link text-decoration-none d-block mx-auto" (click)="toggleForm(true)">
+            Already have an account? Login
+          </button>
         </div>
       </div>
     </div>
