@@ -6,6 +6,7 @@ import { FacultyAuthComponent } from './Pages/auth/institution-users/faculty-aut
 import { AdminAuthComponent } from './Pages/auth/admin-users/admin-auth/admin-auth.component';
 import { InstitutionSelectionComponent } from './Pages/auth/institution-users/institution-selector/institution-selector.component';
 import { ManageInstitutionComponent } from './Pages/auth/manage-institution/manage-institution.component';
+import { FeatureComponent } from './Pages/feature/feature.component';
 export const routes: Routes = [
   {
     path: '',
