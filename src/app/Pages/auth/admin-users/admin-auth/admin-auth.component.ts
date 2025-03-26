@@ -14,7 +14,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./admin-auth.component.css'],
 })
 export class AdminAuthComponent{
-adminLoginData = { email: '', password: '' };
+  adminLoginData = { email: '', password: '' };
   loginError = false;
 
   constructor(private router: Router) {}
@@ -26,17 +26,5 @@ adminLoginData = { email: '', password: '' };
     } else {
       this.loginError = true;
     }
-  }adminLoginData = { email: '', password: '' };
-  loginError = false;
-
-  constructor(private router: Router) {}
-
-  onAdminLogin() {
-    if (this.adminLoginData.email === 'admin.' && this.adminLoginData.password === 'root.') {
-      this.loginError = false;
-      this.router.navigateByUrl('/auth/manage-institute');
-    } else {
-      this.loginError = true;
-    }
-  }  
+  }
 }

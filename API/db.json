@@ -1,463 +1,463 @@
 {
   "institutions": [
     {
-      "id": "1",
-      "name": "Bright Future Academy",
-      "location": "Mumbai",
-      "image": "https://ui-avatars.com/api/?name=Bright+Future+Academy&background=0D8ABC&color=fff"
+      "id": 1,
+      "name": "Indian Institute of Science",
+      "location": "Bangalore, Karnataka",
+      "image": "https://www.iisc.ac.in/wp-content/uploads/2016/10/IISc_Logo_512x512.png"
     },
     {
-      "id": "2",
-      "name": "Global Education Center",
-      "location": "Chennai",
-      "image": "https://ui-avatars.com/api/?name=Global+Education+Center&background=673AB7&color=fff"
+      "id": 2,
+      "name": "Jawaharlal Nehru University",
+      "location": "New Delhi, Delhi",
+      "image": "https://www.jnu.ac.in/sites/default/files/jnuhlog_0.png"
     },
     {
-      "id": "3",
+      "id": 3,
       "name": "Banaras Hindu University",
       "location": "Varanasi, Uttar Pradesh",
       "image": "https://www.bhu.ac.in/Images/bhu-logo-new.png"
     },
     {
-      "id": "4",
-      "name": "Smart Knowledge Hub",
-      "location": "Bengaluru",
-      "image": "https://ui-avatars.com/api/?name=Smart+Knowledge+Hub&background=E91E63&color=fff"
-    },
-    {
-      "id": "5",
-      "name": "Calcutta University",
-      "location": "Kolkata, West Bengal",
-      "image": "https://www.caluniv.ac.in/images/cu-logo.png"
-    },
-    {
-      "id": "6",
-      "name": "Jadavpur University",
-      "location": "Kolkata, West Bengal",
-      "image": "https://www.jaduniv.edu.in/upload_images/ju_logo.png"
-    },
-    {
-      "id": "7",
-      "name": "Anna University",
-      "location": "Chennai, Tamil Nadu",
-      "image": "https://www.annauniv.edu/images/au_logo.png"
-    },
-    {
-      "id": "8",
-      "name": "Amrita Vishwa Vidyapeetham",
-      "location": "Coimbatore, Tamil Nadu",
-      "image": "https://www.amrita.edu/wp-content/themes/amrita/images/amrita-logo.svg"
-    },
-    {
-      "id": "9",
-      "name": "Manipal Academy of Higher Education",
-      "location": "Manipal, Karnataka",
-      "image": "https://manipal.edu/content/dam/manipal/mu/images/logo.png"
-    },
-    {
-      "id": "10",
-      "name": "Savitribai Phule Pune University",
-      "location": "Pune, Maharashtra",
-      "image": "http://www.unipune.ac.in/images/university_logo.png"
-    },
-    {
-      "id": "11",
-      "name": "Aligarh Muslim University",
-      "location": "Aligarh, Uttar Pradesh",
-      "image": "https://www.amu.ac.in/newdata/images/amu-logo.png"
-    },
-    {
-      "id": "12",
-      "name": "Jamia Millia Islamia",
-      "location": "New Delhi, Delhi",
-      "image": "https://www.jmi.ac.in/images/jmi-logo.png"
-    },
-    {
-      "id": "13",
-      "name": "University of Delhi",
-      "location": "Delhi, Delhi",
-      "image": "http://www.du.ac.in/du/uploads/images/du-logo.png"
-    },
-    {
-      "id": "14",
-      "name": "Bharathiar University",
-      "location": "Coimbatore, Tamil Nadu",
-      "image": "https://www.b-u.ac.in/images/bu-logo.png"
-    },
-    {
-      "id": "15",
-      "name": "Institute of Chemical Technology",
-      "location": "Mumbai, Maharashtra",
-      "image": "https://www.ictmumbai.edu.in/images/ict-logo.png"
-    },
-    {
-      "id": "16",
-      "name": "Andhra University",
-      "location": "Visakhapatnam, Andhra Pradesh",
-      "image": "https://www.andhrauniversity.edu.in/img/au-logo.png"
-    },
-    {
-      "id": "17",
-      "name": "Homi Bhabha National Institute",
-      "location": "Mumbai, Maharashtra",
-      "image": "https://www.hbni.ac.in/main/images/hbni-logo.png"
-    },
-    {
-      "id": "18",
-      "name": "University of Madras",
-      "location": "Chennai, Tamil Nadu",
-      "image": "https://www.unom.ac.in/images/unom-logo.png"
-    },
-    {
-      "id": "19",
-      "name": "Vellore Institute of Technology",
-      "location": "Vellore, Tamil Nadu",
-      "image": "https://vit.ac.in/sites/all/themes/vittheme/images/vitlogo.png"
-    },
-    {
-      "id": "20",
-      "name": "University of Calicut",
-      "location": "Malappuram, Kerala",
-      "image": "https://www.uoc.ac.in/images/uoc-logo.png"
-    },
-    {
-      "id": "21",
-      "name": "Panjab University",
-      "location": "Chandigarh, Punjab",
-      "image": "https://puchd.ac.in/includes/images/pulogo.png"
-    },
-    {
-      "id": "22",
-      "name": "North Eastern Hill University",
-      "location": "Shillong, Meghalaya",
-      "image": "https://www.nehu.ac.in/public/assets/images/nehu-logo.png"
-    },
-    {
-      "id": "23",
-      "name": "Visva-Bharati University",
-      "location": "Santiniketan, West Bengal",
-      "image": "https://www.visvabharati.ac.in/images/vbu-logo.png"
-    },
-    {
-      "id": "24",
-      "name": "University of Kerala",
-      "location": "Thiruvananthapuram, Kerala",
-      "image": "https://www.keralauniversity.ac.in/images/ku-logo.png"
-    },
-    {
-      "id": "25",
-      "name": "Osmania University",
-      "location": "Hyderabad, Telangana",
-      "image": "https://www.osmania.ac.in/images/ou-logo.png"
-    },
-    {
-      "id": "26",
-      "name": "Guru Nanak Dev University",
-      "location": "Amritsar, Punjab",
-      "image": "https://www.gndu.ac.in/images/gndu-logo.png"
-    },
-    {
-      "id": "27",
-      "name": "Mysore University",
-      "location": "Mysore, Karnataka",
-      "image": "https://uni-mysore.ac.in/assets/images/uom-logo.png"
-    },
-    {
-      "id": "28",
-      "name": "University of Rajasthan",
-      "location": "Jaipur, Rajasthan",
-      "image": "https://www.uniraj.ac.in/images/uniraj-logo.png"
-    },
-    {
-      "id": "30",
-      "name": "Shiv Nadar University",
-      "location": "Dadri, Uttar Pradesh",
-      "image": "https://www.snu.edu.in/themes/custom/snu/logo.png"
-    },
-    {
-      "id": "31",
-      "name": "Chandigarh University",
-      "location": "Mohali, Punjab",
-      "image": "https://www.cuchd.in/assets/images/cu-logo.png"
-    },
-    {
-      "id": "32",
-      "name": "Lovely Professional University",
-      "location": "Phagwara, Punjab",
-      "image": "https://www.lpu.in/images/logo.png"
-    },
-    {
-      "id": "33",
-      "name": "SRM Institute of Science and Technology",
-      "location": "Chennai, Tamil Nadu",
-      "image": "https://www.srmist.edu.in/wp-content/uploads/2023/05/srm_logo.png"
-    },
-    {
-      "id": "34",
-      "name": "Birla Institute of Technology and Science",
-      "location": "Pilani, Rajasthan",
-      "image": "https://www.bits-pilani.ac.in/images/bits_logo.png"
-    },
-    {
-      "id": "35",
-      "name": "Graphic Era University",
-      "location": "Dehradun, Uttarakhand",
-      "image": "https://www.geu.ac.in/images/geu-logo.png"
-    },
-    {
-      "id": "36",
-      "name": "Sharda University",
-      "location": "Greater Noida, Uttar Pradesh",
-      "image": "data:image/jpeg;base64,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"
-    },
-    {
-      "id": "37",
-      "name": "GITAM University",
-      "location": "Visakhapatnam, Andhra Pradesh",
-      "image": "https://www.gitam.edu/assets/images/gitam-logo.png"
-    },
-    {
-      "id": "38",
-      "name": "KIIT University",
-      "location": "Bhubaneswar, Odisha",
-      "image": "https://kiit.ac.in/wp-content/uploads/2018/09/KIIT-Logo-New.png"
-    },
-    {
-      "id": "39",
-      "name": "Symbiosis International University",
-      "location": "Pune, Maharashtra",
-      "image": "https://www.siu.edu.in/images/symbiosis-logo.png"
-    },
-    {
-      "id": "40",
-      "name": "Ashoka University",
-      "location": "Sonipat, Haryana",
-      "image": "https://www.ashoka.edu.in/wp-content/uploads/2022/08/ashoka-logo.svg"
-    },
-    {
-      "id": "41",
-      "name": "Christ University",
-      "location": "Bangalore, Karnataka",
-      "image": "https://christuniversity.in/images/cu-logo.png"
-    },
-    {
-      "id": "42",
-      "name": "NMIMS University",
-      "location": "Mumbai, Maharashtra",
-      "image": "https://www.nmims.edu/assets/images/nmims-logo.png"
-    },
-    {
-      "id": "43",
-      "name": "Presidency University",
-      "location": "Bangalore, Karnataka",
-      "image": "https://presidencyuniversity.in/wp-content/uploads/2021/05/presidency-logo.png"
-    },
-    {
-      "id": "44",
-      "name": "Dayananda Sagar University",
-      "location": "Bangalore, Karnataka",
-      "image": "https://www.dsu.edu.in/images/dsu-logo.png"
-    },
-    {
-      "id": "45",
-      "name": "Bennett University",
-      "location": "Greater Noida, Uttar Pradesh",
-      "image": "https://www.bennett.edu.in/wp-content/uploads/2021/10/Bennett-Logo.svg"
-    },
-    {
-      "id": "46",
-      "name": "O.P. Jindal Global University",
-      "location": "Sonipat, Haryana",
-      "image": "https://jgu.edu.in/wp-content/uploads/2022/09/jgu-logo.png"
-    },
-    {
-      "id": "47",
-      "name": "G.D. Goenka University",
-      "location": "Gurgaon, Haryana",
-      "image": "https://www.gdgoenkauniversity.com/images/gd-goenka-logo.png"
-    },
-    {
-      "id": "48",
-      "name": "MIT World Peace University",
-      "location": "Pune, Maharashtra",
-      "image": "https://mitwpu.edu.in/assets/images/mitwpu-logo.png"
-    },
-    {
-      "id": "49",
-      "name": "ICFAI University",
-      "location": "Dehradun, Uttarakhand",
-      "image": "https://www.iudehradun.edu.in/images/icfai-logo.png"
-    },
-    {
-      "id": "50",
-      "name": "Parul University",
-      "location": "Vadodara, Gujarat",
-      "image": "https://paruluniversity.ac.in/assets/images/parul-logo.png"
-    },
-    {
-      "id": "51",
-      "name": "Amity University",
-      "location": "Noida, Uttar Pradesh",
-      "image": "https://www.amity.edu/images/amity-logo.png"
-    },
-    {
-      "id": "52",
-      "name": "University of Mumbai",
-      "location": "Mumbai, Maharashtra",
-      "image": "https://mu.ac.in/wp-content/uploads/2021/09/mu-logo.png"
-    },
-    {
-      "id": "53",
-      "name": "University of Pune",
-      "location": "Pune, Maharashtra",
-      "image": "http://www.unipune.ac.in/images/university_logo.png"
-    },
-    {
-      "id": "54",
-      "name": "University of Calcutta",
-      "location": "Kolkata, West Bengal",
-      "image": "https://www.caluniv.ac.in/images/cu-logo.png"
-    },
-    {
-      "id": "55",
+      "id": 4,
       "name": "University of Hyderabad",
       "location": "Hyderabad, Telangana",
       "image": "https://www.uohyd.ac.in/images/uoh-logo.png"
     },
     {
-      "id": "56",
-      "name": "University of Delhi",
+      "id": 5,
+      "name": "Calcutta University",
+      "location": "Kolkata, West Bengal",
+      "image": "https://www.caluniv.ac.in/images/cu-logo.png"
+    },
+    {
+      "id": 6,
+      "name": "Jadavpur University",
+      "location": "Kolkata, West Bengal",
+      "image": "https://www.jaduniv.edu.in/upload_images/ju_logo.png"
+    },
+    {
+      "id": 7,
+      "name": "Anna University",
+      "location": "Chennai, Tamil Nadu",
+      "image": "https://www.annauniv.edu/images/au_logo.png"
+    },
+    {
+      "id": 8,
+      "name": "Amrita Vishwa Vidyapeetham",
+      "location": "Coimbatore, Tamil Nadu",
+      "image": "https://www.amrita.edu/wp-content/themes/amrita/images/amrita-logo.svg"
+    },
+    {
+      "id": 9,
+      "name": "Manipal Academy of Higher Education",
+      "location": "Manipal, Karnataka",
+      "image": "https://manipal.edu/content/dam/manipal/mu/images/logo.png"
+    },
+    {
+      "id": 10,
+      "name": "Savitribai Phule Pune University",
+      "location": "Pune, Maharashtra",
+      "image": "http://www.unipune.ac.in/images/university_logo.png"
+    },
+    {
+      "id": 11,
+      "name": "Aligarh Muslim University",
+      "location": "Aligarh, Uttar Pradesh",
+      "image": "https://www.amu.ac.in/newdata/images/amu-logo.png"
+    },
+    {
+      "id": 12,
+      "name": "Jamia Millia Islamia",
       "location": "New Delhi, Delhi",
+      "image": "https://www.jmi.ac.in/images/jmi-logo.png"
+    },
+    {
+      "id": 13,
+      "name": "University of Delhi",
+      "location": "Delhi, Delhi",
       "image": "http://www.du.ac.in/du/uploads/images/du-logo.png"
     },
     {
-      "id": "57",
+      "id": 14,
+      "name": "Bharathiar University",
+      "location": "Coimbatore, Tamil Nadu",
+      "image": "https://www.b-u.ac.in/images/bu-logo.png"
+    },
+    {
+      "id": 15,
+      "name": "Institute of Chemical Technology",
+      "location": "Mumbai, Maharashtra",
+      "image": "https://www.ictmumbai.edu.in/images/ict-logo.png"
+    },
+    {
+      "id": 16,
+      "name": "Andhra University",
+      "location": "Visakhapatnam, Andhra Pradesh",
+      "image": "https://www.andhrauniversity.edu.in/img/au-logo.png"
+    },
+    {
+      "id": 17,
+      "name": "Homi Bhabha National Institute",
+      "location": "Mumbai, Maharashtra",
+      "image": "https://www.hbni.ac.in/main/images/hbni-logo.png"
+    },
+    {
+      "id": 18,
       "name": "University of Madras",
       "location": "Chennai, Tamil Nadu",
       "image": "https://www.unom.ac.in/images/unom-logo.png"
     },
     {
-      "id": "58",
-      "name": "University of Rajasthan",
-      "location": "Jaipur, Rajasthan",
-      "image": "https://www.uniraj.ac.in/images/uniraj-logo.png"
+      "id": 19,
+      "name": "Vellore Institute of Technology",
+      "location": "Vellore, Tamil Nadu",
+      "image": "https://vit.ac.in/sites/all/themes/vittheme/images/vitlogo.png"
     },
     {
-      "id": "59",
-      "name": "University of Lucknow",
-      "location": "Lucknow, Uttar Pradesh",
-      "image": "https://www.lkouniv.ac.in/images/lkouniv-logo.png"
+      "id": 20,
+      "name": "University of Calicut",
+      "location": "Malappuram, Kerala",
+      "image": "https://www.uoc.ac.in/images/uoc-logo.png"
     },
     {
-      "id": "60",
+      "id": 21,
+      "name": "Panjab University",
+      "location": "Chandigarh, Punjab",
+      "image": "https://puchd.ac.in/includes/images/pulogo.png"
+    },
+    {
+      "id": 22,
+      "name": "North Eastern Hill University",
+      "location": "Shillong, Meghalaya",
+      "image": "https://www.nehu.ac.in/public/assets/images/nehu-logo.png"
+    },
+    {
+      "id": 23,
+      "name": "Visva-Bharati University",
+      "location": "Santiniketan, West Bengal",
+      "image": "https://www.visvabharati.ac.in/images/vbu-logo.png"
+    },
+    {
+      "id": 24,
       "name": "University of Kerala",
       "location": "Thiruvananthapuram, Kerala",
       "image": "https://www.keralauniversity.ac.in/images/ku-logo.png"
     },
     {
-      "id": "61",
+      "id": 25,
+      "name": "Osmania University",
+      "location": "Hyderabad, Telangana",
+      "image": "https://www.osmania.ac.in/images/ou-logo.png"
+    },
+    {
+      "id": 26,
+      "name": "Guru Nanak Dev University",
+      "location": "Amritsar, Punjab",
+      "image": "https://www.gndu.ac.in/images/gndu-logo.png"
+    },
+    {
+      "id": 27,
+      "name": "Mysore University",
+      "location": "Mysore, Karnataka",
+      "image": "https://uni-mysore.ac.in/assets/images/uom-logo.png"
+    },
+    {
+      "id": 28,
+      "name": "University of Rajasthan",
+      "location": "Jaipur, Rajasthan",
+      "image": "https://www.uniraj.ac.in/images/uniraj-logo.png"
+    },
+    {
+      "id": 30,
+      "name": "Shiv Nadar University",
+      "location": "Dadri, Uttar Pradesh",
+      "image": "https://www.snu.edu.in/themes/custom/snu/logo.png"
+    },
+    {
+      "id": 31,
+      "name": "Chandigarh University",
+      "location": "Mohali, Punjab",
+      "image": "https://www.cuchd.in/assets/images/cu-logo.png"
+    },
+    {
+      "id": 32,
+      "name": "Lovely Professional University",
+      "location": "Phagwara, Punjab",
+      "image": "https://www.lpu.in/images/logo.png"
+    },
+    {
+      "id": 33,
+      "name": "SRM Institute of Science and Technology",
+      "location": "Chennai, Tamil Nadu",
+      "image": "https://www.srmist.edu.in/wp-content/uploads/2023/05/srm_logo.png"
+    },
+    {
+      "id": 34,
+      "name": "Birla Institute of Technology and Science",
+      "location": "Pilani, Rajasthan",
+      "image": "https://www.bits-pilani.ac.in/images/bits_logo.png"
+    },
+    {
+      "id": 35,
+      "name": "Graphic Era University",
+      "location": "Dehradun, Uttarakhand",
+      "image": "https://www.geu.ac.in/images/geu-logo.png"
+    },
+    {
+      "id": 36,
+      "name": "Sharda University",
+      "location": "Greater Noida, Uttar Pradesh",
+      "image": "https://www.sharda.ac.in/assets/images/sharda-logo.png"
+    },
+    {
+      "id": 37,
+      "name": "GITAM University",
+      "location": "Visakhapatnam, Andhra Pradesh",
+      "image": "https://www.gitam.edu/assets/images/gitam-logo.png"
+    },
+    {
+      "id": 38,
+      "name": "KIIT University",
+      "location": "Bhubaneswar, Odisha",
+      "image": "https://kiit.ac.in/wp-content/uploads/2018/09/KIIT-Logo-New.png"
+    },
+    {
+      "id": 39,
+      "name": "Symbiosis International University",
+      "location": "Pune, Maharashtra",
+      "image": "https://www.siu.edu.in/images/symbiosis-logo.png"
+    },
+    {
+      "id": 40,
+      "name": "Ashoka University",
+      "location": "Sonipat, Haryana",
+      "image": "https://www.ashoka.edu.in/wp-content/uploads/2022/08/ashoka-logo.svg"
+    },
+    {
+      "id": 41,
+      "name": "Christ University",
+      "location": "Bangalore, Karnataka",
+      "image": "https://christuniversity.in/images/cu-logo.png"
+    },
+    {
+      "id": 42,
+      "name": "NMIMS University",
+      "location": "Mumbai, Maharashtra",
+      "image": "https://www.nmims.edu/assets/images/nmims-logo.png"
+    },
+    {
+      "id": 43,
+      "name": "Presidency University",
+      "location": "Bangalore, Karnataka",
+      "image": "https://presidencyuniversity.in/wp-content/uploads/2021/05/presidency-logo.png"
+    },
+    {
+      "id": 44,
+      "name": "Dayananda Sagar University",
+      "location": "Bangalore, Karnataka",
+      "image": "https://www.dsu.edu.in/images/dsu-logo.png"
+    },
+    {
+      "id": 45,
+      "name": "Bennett University",
+      "location": "Greater Noida, Uttar Pradesh",
+      "image": "https://www.bennett.edu.in/wp-content/uploads/2021/10/Bennett-Logo.svg"
+    },
+    {
+      "id": 46,
+      "name": "O.P. Jindal Global University",
+      "location": "Sonipat, Haryana",
+      "image": "https://jgu.edu.in/wp-content/uploads/2022/09/jgu-logo.png"
+    },
+    {
+      "id": 47,
+      "name": "G.D. Goenka University",
+      "location": "Gurgaon, Haryana",
+      "image": "https://www.gdgoenkauniversity.com/images/gd-goenka-logo.png"
+    },
+    {
+      "id": 48,
+      "name": "MIT World Peace University",
+      "location": "Pune, Maharashtra",
+      "image": "https://mitwpu.edu.in/assets/images/mitwpu-logo.png"
+    },
+    {
+      "id": 49,
+      "name": "ICFAI University",
+      "location": "Dehradun, Uttarakhand",
+      "image": "https://www.iudehradun.edu.in/images/icfai-logo.png"
+    },
+    {
+      "id": 50,
+      "name": "Parul University",
+      "location": "Vadodara, Gujarat",
+      "image": "https://paruluniversity.ac.in/assets/images/parul-logo.png"
+    },
+    {
+      "id": 51,
+      "name": "Amity University",
+      "location": "Noida, Uttar Pradesh",
+      "image": "https://www.amity.edu/images/amity-logo.png"
+    },
+    {
+      "id": 52,
+      "name": "University of Mumbai",
+      "location": "Mumbai, Maharashtra",
+      "image": "https://mu.ac.in/wp-content/uploads/2021/09/mu-logo.png"
+    },
+    {
+      "id": 53,
+      "name": "University of Pune",
+      "location": "Pune, Maharashtra",
+      "image": "http://www.unipune.ac.in/images/university_logo.png"
+    },
+    {
+      "id": 54,
+      "name": "University of Calcutta",
+      "location": "Kolkata, West Bengal",
+      "image": "https://www.caluniv.ac.in/images/cu-logo.png"
+    },
+    {
+      "id": 55,
+      "name": "University of Hyderabad",
+      "location": "Hyderabad, Telangana",
+      "image": "https://www.uohyd.ac.in/images/uoh-logo.png"
+    },
+    {
+      "id": 56,
+      "name": "University of Delhi",
+      "location": "New Delhi, Delhi",
+      "image": "http://www.du.ac.in/du/uploads/images/du-logo.png"
+    },
+    {
+      "id": 57,
+      "name": "University of Madras",
+      "location": "Chennai, Tamil Nadu",
+      "image": "https://www.unom.ac.in/images/unom-logo.png"
+    },
+    {
+      "id": 58,
+      "name": "University of Rajasthan",
+      "location": "Jaipur, Rajasthan",
+      "image": "https://www.uniraj.ac.in/images/uniraj-logo.png"
+    },
+    {
+      "id": 59,
+      "name": "University of Lucknow",
+      "location": "Lucknow, Uttar Pradesh",
+      "image": "https://www.lkouniv.ac.in/images/lkouniv-logo.png"
+    },
+    {
+      "id": 60,
+      "name": "University of Kerala",
+      "location": "Thiruvananthapuram, Kerala",
+      "image": "https://www.keralauniversity.ac.in/images/ku-logo.png"
+    },
+    {
+      "id": 61,
       "name": "University of Mysore",
       "location": "Mysore, Karnataka",
       "image": "https://uni-mysore.ac.in/assets/images/uom-logo.png"
     },
     {
-      "id": "62",
+      "id": 62,
       "name": "University of Patna",
       "location": "Patna, Bihar",
       "image": "https://www.patnauniversity.ac.in/images/pu-logo.png"
     },
     {
-      "id": "63",
+      "id": 63,
       "name": "University of Osmania",
       "location": "Hyderabad, Telangana",
       "image": "https://www.osmania.ac.in/images/ou-logo.png"
     },
     {
-      "id": "64",
+      "id": 64,
       "name": "University of Punjab",
       "location": "Chandigarh, Punjab",
       "image": "https://puchd.ac.in/includes/images/pulogo.png"
     },
     {
-      "id": "65",
+      "id": 65,
       "name": "University of Allahabad",
       "location": "Allahabad, Uttar Pradesh",
       "image": "https://www.allduniv.ac.in/images/au-logo.png"
     },
     {
-      "id": "66",
+      "id": 66,
       "name": "University of Visva-Bharati",
       "location": "Santiniketan, West Bengal",
       "image": "https://www.visvabharati.ac.in/images/vbu-logo.png"
     },
     {
-      "id": "67",
+      "id": 67,
       "name": "University of Annamalai",
       "location": "Chidambaram, Tamil Nadu",
       "image": "https://annamalaiuniversity.ac.in/images/annamalai-logo.png"
     },
     {
-      "id": "68",
+      "id": 68,
       "name": "University of Andhra",
       "location": "Visakhapatnam, Andhra Pradesh",
       "image": "https://www.andhrauniversity.edu.in/img/au-logo.png"
     },
     {
-      "id": "69",
+      "id": 69,
       "name": "University of Bangalore",
       "location": "Bangalore, Karnataka",
       "image": "https://bangaloreuniversity.ac.in/wp-content/uploads/2021/09/bu-logo.png"
     },
     {
-      "id": "70",
+      "id": 70,
       "name": "University of Gauhati",
       "location": "Guwahati, Assam",
       "image": "https://gauhati.ac.in/site/images/gu-logo.png"
     },
     {
-      "id": "71",
+      "id": 71,
       "name": "University of North Bengal",
       "location": "Darjeeling, West Bengal",
       "image": "https://nbu.ac.in/images/nbu-logo.png"
     },
     {
-      "id": "72",
+      "id": 72,
       "name": "University of Burdwan",
       "location": "Bardhaman, West Bengal",
       "image": "https://www.buruniv.ac.in/Images/buruniv-logo.png"
     },
     {
-      "id": "73",
+      "id": 73,
       "name": "University of Kalyani",
       "location": "Kalyani, West Bengal",
       "image": "https://www.klyuniv.ac.in/images/klyuniv-logo.png"
     },
     {
-      "id": "74",
+      "id": 74,
       "name": "University of Jadavpur",
       "location": "Kolkata, West Bengal",
       "image": "https://www.jaduniv.edu.in/upload_images/ju_logo.png"
     },
     {
-      "id": "75",
+      "id": 75,
       "name": "University of Rabindra Bharati",
       "location": "Kolkata, West Bengal",
       "image": "https://rbu.ac.in/images/rbu-logo.png"
     },
     {
-      "id": "76",
+      "id": 76,
       "name": "University of Vidyasagar",
       "location": "Midnapore, West Bengal",
       "image": "https://www.vidyasagar.ac.in/images/vidyasagar-logo.png"
     },
     {
-      "id": "77",
+      "id": 77,
       "name": "University of Tripura",
       "location": "Agartala, Tripura",
       "image": "https://tripurauniv.ac.in/images/tripurauniv-logo.png"
     },
     {
-      "id": "78",
+      "id": 78,
       "name": "University of Manipur",
       "location": "Imphal, Manipur",
       "image": "https://www.manipuruniv.ac.in/images/manipuruniv-logo.png"
