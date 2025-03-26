@@ -51,16 +51,20 @@ export const routes: Routes = [
         (m) => m.AdminAuthComponent
       ),
   },
-  // {
-  //   path: 'institution-select',
-  //   loadComponent: () => import('./Pages/auth/institution-users/institution-selector/institution-selector.component').then(m => m.InstitutionSelectionComponent),
-  // },
-  {
+    {
     path: 'auth/manage-institute',
     loadComponent: () =>
       import('./Pages/auth/manage-institution/manage-institution.component').then(
         (m) => m.ManageInstitutionComponent
       ),
   },
+{
+    path: 'features',
+    loadComponent: () =>
+      import('./Pages/feature/feature.component').then(
+        (m) => m.FeatureComponent
+      ),
+  },
+
 
 ];
