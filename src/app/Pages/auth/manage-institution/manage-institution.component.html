@@ -3,37 +3,19 @@
 
   <form #institutionForm="ngForm" (ngSubmit)="submitInstitution(institutionForm)" class="row g-3">
     <div class="col-md-4">
-      <input
-        type="text"
-        class="form-control"
-        name="name"
-        placeholder="Institution Name"
-        [(ngModel)]="institutionFormData.name"
-        required
-      />
+      <input type="text" class="form-control" name="name" placeholder="Institution Name"
+        [(ngModel)]="institutionFormData.name" required />
     </div>
 
     <div class="col-md-4">
-      <input
-        type="text"
-        class="form-control"
-        name="location"
-        placeholder="Location"
-        [(ngModel)]="institutionFormData.location"
-        required
-      />
+      <input type="text" class="form-control" name="location" placeholder="Location"
+        [(ngModel)]="institutionFormData.location" required />
     </div>
 
     <div class="col-md-4">
       <input type="file" class="form-control" (change)="onLogoSelected($event)" #logoInput />
-      <img
-        *ngIf="selectedLogoBase64"
-        [src]="selectedLogoBase64"
-        width="50"
-        height="50"
-        class="mt-2 rounded"
-        alt="Preview"
-      />
+      <img *ngIf="selectedLogoBase64" [src]="selectedLogoBase64" width="50" height="50" class="mt-2 rounded"
+        alt="Preview" />
     </div>
 
     <div class="col-12">

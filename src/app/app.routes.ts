@@ -10,6 +10,7 @@ import { FeatureComponent } from './Pages/feature/feature.component';
 import { PlanComponent } from './Pages/plan/plan.component';
 import { TestimonialComponent } from './Pages/testimonial/testimonial.component';
 import { HelpComponent } from './Pages/help/help.component';
+import { InstitutionsComponent } from './Pages/auth/institutions/institutions.component';
 export const routes: Routes = [
   {
     path: '',
@@ -90,6 +91,13 @@ export const routes: Routes = [
         (m) => m.HelpComponent
       ),
   },
+  {
+    path: 'manage',
+    loadComponent:()=>
+      import('./Pages/auth/institutions/institutions.component').then(
+        (m)=> m.InstitutionsComponent
+      ),
+  }
 
 
 ];
