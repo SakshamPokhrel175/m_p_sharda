@@ -1,7 +1,7 @@
+import { Institutions } from './../class/institutions';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Institutions } from '../class/institutions';
 
 @Injectable({
   providedIn: 'root'
@@ -15,4 +15,11 @@ export class GeneralserviceService {
   getGeneralList():Observable<Institutions[]>{
     return this.HttpClient.get<Institutions[]>(`${this.baseURL}`);
   }
+
+  createInstitution(institutions:Institutions):Observable<object>{
+    return this.HttpClient.post(`${this.baseURL}`,institutions);
+  }
+
+
+
 }

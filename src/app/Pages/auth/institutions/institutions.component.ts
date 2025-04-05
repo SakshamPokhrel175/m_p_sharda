@@ -13,13 +13,25 @@ import { Institutions } from './class/institutions';
 export class InstitutionsComponent {
   institutions: Institutions[] = [];
 
+  InstitutionData:Institutions={
+    id: 0,
+    institute_name: '',
+    institute_location: '',
+    institute_image: ''
+  }
+
   constructor(private generalService: GeneralserviceService) {}
 
   ngOnInit(): void {
+    this.insertInstitution();
     this.getGeneral();
   }
+  
+  onSubmit(){
+    console.log(this.InstitutionData);
+  }
 
-  private getGeneral() {
+  getGeneral() {
     this.generalService.getGeneralList().subscribe(
       (data) => {
         console.log('Data fetched from API:', data); // Check the data
@@ -29,5 +41,11 @@ export class InstitutionsComponent {
         console.error('Error fetching data:', error); // Log any error
       }
     );
+  }
+
+  insertInstitution(){
+    this.generalService.createInstitution(this.InstitutionData).subscribe((data)=>{
+      console.log(data);
+    })
   }
 }
