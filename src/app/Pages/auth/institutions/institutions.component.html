@@ -1,64 +1,123 @@
 <div class="container mt-4">
-  <h2 class="mb-3">Institution Form</h2>
 
-  <form (ngSubmit)="onSubmit()" class="row g-3">
-    <div class="col-md-4">
-      <input type="text" class="form-control" name="name" placeholder="Institution Name"
-        [(ngModel)]="InstitutionData.institute_name" required />
+  <!-- Error Alert -->
+  <div *ngIf="errorMessage" class="alert alert-danger animate__animated animate__fadeInDown">
+    {{ errorMessage }}
+  </div>
+
+  <!-- Institution Form -->
+  <div #formSection class="card shadow-lg mb-4">
+    <div class="card-header bg-primary text-white">
+      <h5 class="mb-0">{{ isEditMode ? 'Edit & Submit Institution' : 'Add Institution' }}</h5>
     </div>
+    <div class="card-body">
+      <form (ngSubmit)="onSubmit()" enctype="multipart/form-data">
+        <div class="mb-3">
+          <label for="institute_name" class="form-label">Institution Name</label>
+          <input type="text" class="form-control" id="institute_name" [(ngModel)]="InstitutionData.institute_name"
+            name="institute_name" required />
+        </div>
 
-    <div class="col-md-4">
-      <input type="text" class="form-control" name="location" placeholder="Location"
-        [(ngModel)]="InstitutionData.institute_location" required />
+        <div class="mb-3">
+          <label for="institute_location" class="form-label">Location</label>
+          <input type="text" class="form-control" id="institute_location"
+            [(ngModel)]="InstitutionData.institute_location" name="institute_location" required />
+        </div>
+
+        <div class="mb-3">
+          <label for="institute_image" class="form-label">Logo/Image</label>
+          <input type="file" class="form-control" id="institute_image" (change)="onFileSelected($event)" />
+        </div>
+
+        <div *ngIf="previewUrl" class="mb-3">
+          <label class="form-label">Image Preview:</label><br />
+          <img [src]="previewUrl" alt="Preview" class="img-thumbnail" width="150" />
+        </div>
+
+        <div class="d-flex gap-2">
+          <button type="submit" class="btn btn-success">
+            {{ isEditMode ? 'Edit & Submit Institution' : 'Add Institution' }}
+          </button>
+          <button type="button" class="btn btn-secondary" *ngIf="isEditMode" (click)="cancelEdit()">Cancel</button>
+        </div>
+      </form>
     </div>
+  </div>
 
-    <div class="col-md-4">
-      <input type="file" class="form-control" [(ngModel)]="InstitutionData.institute_location" />
-      <img width="50" height="50" class="mt-2 rounded" alt="Preview" />
+  <!-- Institution List -->
+  <div class="card shadow-lg">
+    <div class="card-header bg-dark text-white">
+      <h5 class="mb-0">Institutions List</h5>
     </div>
-
-    <div class="col-12">
-      <button type="submit" class="btn btn-primary">
-      </button>
+    <div class="card-body p-0">
+      <table class="table table-bordered table-hover table-striped mb-0">
+        <thead class="table-dark">
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Location</th>
+            <th>Logo</th>
+            <th style="width: 160px;">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let inst of institutions">
+            <td>{{ inst.id }}</td>
+            <td>{{ inst.institute_name }}</td>
+            <td>{{ inst.institute_location }}</td>
+            <td>
+              <img [src]="inst.institute_image" alt="Logo" width="60" height="60" class="rounded" />
+            </td>
+            <td>
+              <button class="btn btn-sm btn-primary me-2" (click)="editInstitution(inst)">
+                <i class="bi bi-pencil-square"></i> Edit
+              </button>
+              <button class="btn btn-sm btn-danger" (click)="openDeleteModal(inst)">
+                <i class="bi bi-trash"></i> Delete
+              </button>
+            </td>
+          </tr>
+          <tr *ngIf="institutions.length === 0">
+            <td colspan="5" class="text-center text-muted py-3">No institutions found.</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-  </form>
+  </div>
+</div>
 
-  <hr class="my-4" />
+<!-- Delete Confirmation Modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-danger">
+      <div class="modal-header bg-danger text-white">
+        <h5 class="modal-title">Confirm Delete</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Are you sure you want to delete
+        <strong>{{ selectedInstitutionToDelete?.institute_name }}</strong>?
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <button class="btn btn-danger" (click)="confirmDelete()">Yes, Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-
-
-
-
-
-
-  <h3>Institution List</h3>
-
-  <!-- Display loading message if no data -->
-  <div *ngIf="institutions.length === 0">Loading data or no institutions found.</div>
-
-  <table class="table table-bordered table-striped mt-3" *ngIf="institutions.length > 0">
-    <thead class="table-dark">
-      <tr>
-        <th>ID</th>
-        <th>Name</th>
-        <th>Location</th>
-        <th>Logo</th>
-        <th>Actions</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let institute of institutions">
-        <td>{{ institute.id }}</td>
-        <td>{{ institute.institute_name }}</td>
-        <td>{{ institute.institute_location }}</td>
-        <td>
-          <img [src]="institute.institute_image" width="40" *ngIf="institute.institute_image; else noImage" />
-          <ng-template #noImage>No Image</ng-template>
-        </td>
-        <td>
-          <button class="btn btn-sm btn-warning me-1">Edit</button>
-          <button class="btn btn-sm btn-danger">Delete</button>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+<!-- Success Message Modal -->
+<div class="modal fade" id="successModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-success">
+      <div class="modal-header bg-success text-white">
+        <h5 class="modal-title">Success</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body" id="successModalBody"></div>
+      <div class="modal-footer">
+        <button class="btn btn-success" data-bs-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
