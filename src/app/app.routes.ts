@@ -11,6 +11,7 @@ import { PlanComponent } from './Pages/plan/plan.component';
 import { TestimonialComponent } from './Pages/testimonial/testimonial.component';
 import { HelpComponent } from './Pages/help/help.component';
 import { InstitutionsComponent } from './Pages/auth/institutions/institutions.component';
+import { RemoteProctoringComponent } from './Pages/remote-proctoring/remote-proctoring.component';
 export const routes: Routes = [
   {
     path: '',
@@ -58,9 +59,9 @@ export const routes: Routes = [
   {
     path: 'auth/manage-institute',
     loadComponent: () =>
-      import('./Pages/auth/manage-institution/manage-institution.component').then(
-        (m) => m.ManageInstitutionComponent
-      ),
+      import(
+        './Pages/auth/manage-institution/manage-institution.component'
+      ).then((m) => m.ManageInstitutionComponent),
   },
   {
     path: 'features',
@@ -73,9 +74,7 @@ export const routes: Routes = [
   {
     path: 'plans',
     loadComponent: () =>
-      import('./Pages/plan/plan.component').then(
-        (m) => m.PlanComponent
-      ),
+      import('./Pages/plan/plan.component').then((m) => m.PlanComponent),
   },
   {
     path: 'testimonials',
@@ -87,17 +86,20 @@ export const routes: Routes = [
   {
     path: 'help',
     loadComponent: () =>
-      import('./Pages/help/help.component').then(
-        (m) => m.HelpComponent
-      ),
+      import('./Pages/help/help.component').then((m) => m.HelpComponent),
   },
   {
     path: 'manage',
-    loadComponent:()=>
+    loadComponent: () =>
       import('./Pages/auth/institutions/institutions.component').then(
-        (m)=> m.InstitutionsComponent
+        (m) => m.InstitutionsComponent
       ),
-  }
-
-
+  },
+  {
+    path: 'remote-proctoring',
+    loadComponent: () =>
+      import('./Pages/remote-proctoring/remote-proctoring.component').then(
+        (m) => m.RemoteProctoringComponent
+      ),
+  },
 ];
